@@ -1,4 +1,4 @@
-# Meteor for running on an armv7lv architecture
+# Meteor enablement for running on an armv7lv architecture
 
 This is a clone of Meteor V1.5.2.2 and contains changes in the scripts in order to build and run Meteor on Linux ARM architecture of the 7th version, named `armv7l`. This CPU architecture can be found for example in the [Odroid-HC2](https://www.hardkernel.com/shop/odroid-hc2-home-cloud-two/)
 
