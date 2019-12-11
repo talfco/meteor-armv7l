@@ -1,3 +1,32 @@
+# Meteor for running on a armv7lv
+
+This is a clone of Meteor V1.5.2.2 and contains changes in the scripts in order to build and run Meteor on Linux ARM architecture of the 7th version, named `armv7l`. This CPU architecture can be found for example in the [Odroid-HC2](https://www.hardkernel.com/shop/odroid-hc2-home-cloud-two/)
+
+You can search for `*.old` files in order to understand which files got changed.
+
+## Installation Instructions
+
+* login to your armv7l device
+* clone this repository
+* change in the cloned directory
+* execute `./scripts/generate-dev-bundle.sh`, which builds the `dev-bundle`
+* include the meteor directory in you path and switch over to your meteor project and start the app
+
+Thanks goes to
+* https://meteor-universal.tumblr.com/
+* https://github.com/4commerce-technologies-AG/meteor
+* https://github.com/4commerce-technologies-AG/meteor/issues/67
+" https://github.com/Gatux/meteor
+
+Meteor-Release which was used as a base: 1.5.2.2
+
+* `git clone --single-branch --branch "release-1.5.2.2" https://github.com/meteor/meteor.git`
+
+The script files are minimal, so it's quite ease to modify them to run another older version of Meteor on a ARM based architecture.
+
+Allowed me to shift a cloud based Meteor App instance to a self-hosted, cost and power-efficient Odroid-HC2 machine. 
+
+
 # <a href='https://www.meteor.com'><img src='https://user-images.githubusercontent.com/841294/26841702-0902bbee-4af3-11e7-9805-0618da66a246.png' height='60' alt='Meteor'></a>
 
 [![TravisCI Status](https://travis-ci.org/meteor/meteor.svg?branch=devel)](https://travis-ci.org/meteor/meteor)
